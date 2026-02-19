@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int n=1,i;
+      for(i=100; i>=n; i--){
+        System.out.println(i);
+      }
+    }
+}
