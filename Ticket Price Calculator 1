@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        String s=sc.next();
+        if(a<12){
+            if(s.equals("saturday") || s.equals("sunday"))
+                System.out.println(80);
+            else
+                System.out.println(100);
+        }
+        else if(a>=12 && a<=59){
+            if(s.equals("saturday") || s.equals("sunday"))
+                System.out.println(120);
+            else
+                System.out.println(150);
+        }
+        else{
+            if(s.equals("saturday") || s.equals("sunday"))
+                System.out.println(70);
+            else
+                System.out.println(90);
+        }
+    }
+}
