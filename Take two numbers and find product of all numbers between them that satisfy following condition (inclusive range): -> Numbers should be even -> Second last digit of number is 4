@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner ch = new Scanner(System.in);
+        int a = ch.nextInt(), b = ch.nextInt();
+        long c = 0;
+        for (int i = a; i <= b; i++) {
+            if (i % 2 == 0 && (i / 10) % 10 == 4) {
+                if (c == 0)
+                    c = i;
+                else
+                    c = c * i;
+            }
+        }
+        System.out.println(c);
+    }
+}
